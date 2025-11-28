@@ -21,7 +21,7 @@ steps:
 - task: AzureLoadTest@1
   displayName: 'Run JMeter Load Test'
   inputs:
-   azureSubscription: 'Azure subscription 1'
+   azureSubscription: 'MyAzureConnection'
     loadTestConfigFile: 'loadtest.yaml'       # YAML config for Azure Load Test
     testPlan: 'JPET_Store.jmx'                # JMeter test plan file
     testPlugins: 'plugins/*.jar'              # Path to plugin JARs (if needed)
